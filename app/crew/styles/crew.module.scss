@@ -18,6 +18,38 @@
         font-family: 'Li';
         color: #FFFFFF;
         padding: 0rem 3.75rem;
-        margin: 12.5rem 0rem 3.75rem 0rem;
+        margin: 12.5rem 0rem -6rem 0rem;
+    }
+
+    .container{
+        position: relative;
+        .list{
+            width: max-content;
+            ul{
+                position: absolute;
+                display: flex;
+                list-style: none;
+                gap: 1.25rem;
+                bottom: 60px;
+                left: 60px;
+    
+                .active{
+                    width: .75rem;
+                    height: .75rem;
+                    border-radius: 50%;
+                    background-color: #343740;
+                    cursor: pointer; 
+                    background-color: #FFFFFF; 
+                }
+
+                li{
+                width: .75rem;
+                height: .75rem;
+                border-radius: 50%;
+                background-color: #343740;
+                cursor: pointer;
+                }
+            }
+        }
     }
 }
