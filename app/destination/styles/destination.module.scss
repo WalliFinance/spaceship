@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Li';
+  src: url('../../../public/fonts/Marshal\ Manero.otf');
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url(../../../public/assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: grid;
+    place-content: center;
+
+    p{
+      text-transform: uppercase;
+      font-family: 'Li';
+      color: #FFFFFF;
+      padding: 0rem 3.75rem;
+      margin: 12.5rem 0rem 3.75rem 0rem;
+    }
+      section{
+        article{
+          position: relative;
+
+          ul{
+            padding: 2.5rem;
+            position: absolute;
+            left: 41%;
+            list-style: none;
+            display: flex;
+            gap: 1.25rem;
+
+              li{
+              font-family: 'Li';
+              color: #FFFFFF;
+              cursor: pointer;
+              }
+          }
+        }
+      }
+}

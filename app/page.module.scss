@@ -1,7 +1,74 @@
+@font-face {
+  font-family: 'Subtitle';
+  src: url('../public/fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Button';
+  src: url('../public/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Title';
+  src: url('../public/fonts/AsimovProBd.otf');
+}
+
+
+@font-face {
+  font-family: 'Text';
+  src: url('../public/fonts/LVCSans.otf');
+}
+
+
 .main{
   width: 100%;
   height: 100vh;
   background: url(../public/assets/home/background-home-desktop.jpg);
   background-position: center;
   background-size: cover;
+
+  display: grid;
+  place-content: center;
+
+    .container{
+      display: flex;
+      width: 106.25rem;
+      justify-content: space-between;
+      align-items: center;
+
+        .firstColumn{
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+          color: #FFFFFF;
+
+          p{
+            font-family: 'Subtitle';
+            text-transform: uppercase;
+          }
+
+          h1{
+            font-size: 8rem;
+            text-transform: uppercase;
+            font-family: 'Title';
+          }
+
+          span{
+            font-family: 'Text';
+            font-size: 1.2rem;
+            width: 31.25rem;
+            text-align: justify;
+          }
+        }
+
+        .secondColumn{
+          p{
+            font-size: 3rem;
+            background-color: #FFFFFF;
+            padding: 5.625rem 2.25rem;
+            border-radius: 50%;
+            font-family: 'Button';
+          }
+        }
+    }
 }

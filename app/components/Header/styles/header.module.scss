@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Li';
+    src: url('../../../../public/fonts/Marshal\ Manero.otf');
+}
+
+
 .header{
     width: 100%;
     display: flex;
@@ -53,6 +59,7 @@
                     a{
                         text-decoration: none;
                         color: inherit;
+                        font-family: 'Li';
                         text-transform: uppercase;
                     }
              
