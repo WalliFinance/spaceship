@@ -1,0 +1,61 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    .logo{
+        padding-left: 2.50rem;
+        padding-top: 3.125rem;
+        position: relative;
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 780px;
+            height: 2px;
+            background-color: #242226;
+            top: 75%;
+            left: 200%;
+            z-index: 2000;
+        }
+
+    }
+    nav{
+        display: flex;
+        height: 6.25rem;
+        align-items: center;
+        padding: 1.25rem;
+        margin-top: 2.5rem;
+        position: relative;
+        
+            .bg{
+            width: 62.5rem;
+            height: 100%;
+            position: absolute;
+            background-color:gray;
+            padding: 1.25rem;
+            filter: blur(.1875rem);
+            right: 0;
+            }
+        
+            ul{
+            display: flex;
+            gap: 1.5rem;
+            width:62.5rem;
+            position: absolute;
+            padding: .875rem;
+            right: 0;
+            color: #FFFFFF;
+
+
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                        text-transform: uppercase;
+                    }
+             
+        }
+    }
+}
